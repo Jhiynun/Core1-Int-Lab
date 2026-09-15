@@ -1,0 +1,99 @@
+.map {position: relative;}
+.map img {width: 100%; height: auto;display:block;}
+
+.entrance {
+    position: absolute;
+    top: 3%; left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f0f0;
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.right-entrance {
+    position: absolute;
+    top: 22%; left: 60%;
+    background-color: #f0f0f0;
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.left-entrance {
+    position: absolute;
+    top: 22%; left: 30%;
+    background-color: #f0f0f0;
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.fitting-room {
+    position: absolute;
+    top: 62.5%;
+    left: 6%;
+    background-color: #f0f0f0;
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.stairs {
+    position: absolute; 
+    top: 62.5%; 
+    left: 83%; 
+    background-color: #f0f0f0; 
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%; 
+    text-decoration: none; 
+    color: black; border-radius: 5px;
+}
+
+.cashier {
+    position: absolute; 
+    top: 86%; left: 45%; 
+    background-color: #f0f0f0; 
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%; 
+    text-decoration: none; 
+    color: black; border-radius: 5px;
+}
+
+.self-checkout {
+    position: absolute; 
+    top: 44%; left: 1%; 
+    background-color: #f0f0f0; 
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%; 
+    text-decoration: none; 
+    color: black; border-radius: 5px;
+}
+
+.center {
+    position: absolute; 
+    top: 50%; left: 45%; 
+    background-color: #f0f0f0; 
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%; 
+    text-decoration: none; 
+    color: black; border-radius: 5px;
+}
+
+.perfume-zone {
+    position: absolute; 
+    top: 75%; left: 43%; 
+    background-color: #f0f0f0; 
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%; 
+    text-decoration: none; 
+    color: black; border-radius: 5px;
+}

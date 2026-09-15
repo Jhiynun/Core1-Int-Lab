@@ -1,0 +1,44 @@
+.cashier-page {position: relative;}
+
+body{
+    text-align: center;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+}
+
+
+.back-to-map {
+    position: absolute;
+    top: 100%; left: 42.5%;
+    background-color: #f0f0f0;
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.fitting-room {
+    position: absolute;
+    top: 40%; left: 82%;
+    background-color: #f0f0f0;
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+.self-checkout {
+    position: absolute;
+    top: 40%; left: 1.5%;
+    background-color: #f0f0f0;
+    font-size: clamp(9px, 2vw, 20px);
+    padding: 1% 2%;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
