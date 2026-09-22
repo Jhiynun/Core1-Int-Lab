@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>★☆ How To Make A PB&amp;J ☆★</title>
+<style>
+:root {
+  --bg: #ffff66;
+  --text: #000000;
+  --title: #ff0000;
+  --link: #0000ee;
+  --box: #ccffff;
+  --border: #ff00ff;
+  --warn: #ff6600;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000;
+    --text: #00ff00;
+    --title: #ff3333;
+    --link: #66ccff;
+    --box: #000066;
+    --border: #ff00ff;
+    --warn: #ffcc00;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #000000;
+  --text: #00ff00;
+  --title: #ff3333;
+  --link: #66ccff;
+  --box: #000066;
+  --border: #ff00ff;
+  --warn: #ffcc00;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive, sans-serif;
+  margin: 8px;
+  text-align: center;
+}
+h1 { color: var(--title); font-size: 2.2em; text-decoration: underline; }
+a { color: var(--link); }
+.box {
+  background: var(--box);
+  border: 5px dashed var(--border);
+  padding: 10px;
+  margin: 15px auto;
+  max-width: 600px;
+  text-align: left;
+}
+.blink { animation: blink 1s steps(1) infinite; color: var(--warn); font-weight: bold; }
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .blink { animation: none; } }
+.big { font-size: 60px; }
+table { margin: 0 auto; border: 3px solid var(--text); }
+td { border: 1px solid var(--text); padding: 5px; }
+.counter { font-family: "Courier New", monospace; background: #000; color: #0f0; padding: 2px 6px; border: 2px inset #999; }
+button { font-family: inherit; font-size: 18px; padding: 8px; cursor: pointer; }
+marquee { font-weight: bold; }
+</style>
+</head>
+<body>
+
+<marquee>~~~ WELCOME!!! Welcome to my website!!! ~~~</marquee>
+
+<h1>&#9733; How To Make A Peanut Butter &amp; Jelly Sandwich &#9733;</h1>
+
+<p class="big">🥜🍞🍇</p>
+
+<p>Hi everyone!! This is my first website ever lol<br>
+Today i am going to teach you how to make a PB&amp;J!!!!<br>
+<b>Its sooo easy</b> if i can do it u can do it too</p>
+
+<p class="blink">!!! WARNING: dont eat this if ur allergic to peanuts !!!</p>
+
+<hr>
+
+<h2>📝 What You Need</h2>
+
+<table>
+  <tr><td><b>Thing</b></td><td><b>How Many</b></td></tr>
+  <tr><td>Bread 🍞</td><td>2 slices</td></tr>
+  <tr><td>Peanut Butter 🥜</td><td>a lot (however much u want)</td></tr>
+  <tr><td>Jam or Jelly 🍇</td><td>a lot (grape is the best)</td></tr>
+  <tr><td>Butter Knife 🔪</td><td>1</td></tr>
+  <tr><td>Plate</td><td>1 (or a cutting board if u dont have one)</td></tr>
+</table>
+
+<hr>
+
+<h2>👩‍🍳 How To Make It</h2>
+
+<div class="box">
+<p><b>Step 1.</b> Take out 2 slices of bread and put them side by side on the plate. MAKE SURE to close the bread bag or it gets hard</p>
+<p><b>Step 2.</b> Use the knife to scoop peanut butter and spread it on one slice. Go all the way to the edges!! If u only do the middle the edges taste bad</p>
+<p><b>Step 3.</b> Wipe the knife first (or else peanut butter gets in the jelly jar ;-;) then spread jelly on the other slice</p>
+<p><b>Step 4.</b> Put the two slices together with the spread sides facing each other. <u>SPREAD SIDE GOES INSIDE!!!</u> not outside</p>
+<p><b>Step 5.</b> Cut it in half. If u cut it diagonally it makes triangles and it looks more yummy (this is science)</p>
+<p><b>Step 6.</b> EAT IT!!!!!! 😋😋😋</p>
+</div>
+
+<hr>
+
+<h2>💡 Pro Tips</h2>
+<ul style="text-align:left; max-width:600px; margin:0 auto;">
+  <li>Toasting the bread makes it even better</li>
+  <li>Put a thin layer of peanut butter on BOTH slices and the jelly in the middle so the bread doesnt get soggy</li>
+  <li>You can add banana slices too 👍</li>
+  <li>Best with a glass of milk</li>
+</ul>
+
+<hr>
+
+<h2>Was This Helpful??</h2>
+<button onclick="document.getElementById('msg').innerText = 'THANK YOU!!! 🥰🥰🥰'">YES!!</button>
+<button onclick="document.getElementById('msg').innerText = 'oh no.. read it again ;-;'">No</button>
+<p id="msg"></p>
+
+<hr>
+
+<p>Visitors: <span class="counter" id="count">000137</span></p>
+<p><small>This site looks best in Chrome | Last updated: September 2026<br>
+Copyright &copy; 2026 My Homepage All Rights Reserved (i think)</small></p>
+<p><a href="#">&#9650; Back to top &#9650;</a></p>
+
+<p>🚧 UNDER CONSTRUCTION 🚧 how to make instant ramen coming soon!!</p>
+
+<script>
+try {
+  let n = parseInt(localStorage.getItem('pbj-visits') || '137', 10) + 1;
+  localStorage.setItem('pbj-visits', String(n));
+  document.getElementById('count').innerText = String(n).padStart(6, '0');
+} catch (e) {}
+</script>
+
+</body>
+</html>
