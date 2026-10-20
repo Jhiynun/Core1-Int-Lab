@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+ 
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+ 
+.wrapper > div {
+  border: 2px solid rgb(233 171 88);
+  border-radius: 5px;
+  background-color: rgb(233 171 88 / 50%);
+  padding: 1em;
+  color: #d9480f;
+}
+ 
+/* 7열 그리드 = 일~토 */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+}
+ 
+/* 제목: 1번 선부터 8번 선까지 = 7칸 전체 */
+.title {
+  grid-column: 1 / 8;
+  grid-row: 1;
+}
+ 
+/* 요일 칸은 2번째 줄 */
+.weekday {
+  grid-row: 2;
+}
+ 
+/* 날짜 칸: 아래 padding을 늘려서 칸을 키움 */
+.day {
+  padding: 1em 1em 3em 1em;
+}
+ 
+/* 10월 1일은 목요일 → 5번째 열에서 시작
+   나머지 날짜는 자동으로 다음 칸에 채워짐 */
+.first {
+  grid-column: 5;
+  grid-row: 3;
+}
+ 
+/* 오늘 표시 */
+.wrapper > .today {
+  background-color: #d9480f;
+  color: white;
+}
+ 
